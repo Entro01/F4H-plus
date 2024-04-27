@@ -1,6 +1,6 @@
 <script>
 
-  import { IconChevronRight } from "@tabler/icons-svelte";
+import { FaChevronRight } from 'svelte-icons/fa';
 
 </script>
 <form >
@@ -18,7 +18,7 @@
       <button
         type="submit"
         class="text-white absolute right-2.5 bottom-1.5 rounded-full bg-black focus:ring-4 focus:outline-none font-medium text-sm p-3"
-        ><IconChevronRight size={36} /></button
+        ><FaChevronRight size={36} /></button
       >
     </div>
   </form>

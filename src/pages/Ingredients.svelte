@@ -5,7 +5,7 @@
   import food_items from "../assets/food_data.json";
   import Footer from "../lib/Footer.svelte";
   import { createPdf } from "../Download";
-  import { IconDownload } from "@tabler/icons-svelte";
+  import { FaDownload } from "svelte-icons/fa";
 
   let foodItems = food_items as unknown as FoodItem[];
   let value: string[] = [];
@@ -207,7 +207,7 @@
     }}
     class="flex space-x-3 py-4 px-6 font-poppins  bg-white mx-auto rounded-xl">
       <div class="bg-primary p-1.5 rounded-full">
-        <IconDownload color="white" stroke={3}/>
+        <FaDownload color="white" stroke={3}/>
       </div>
       <p class="text-primary font-semibold text-2xl">Download as PDF</p>
     </button>

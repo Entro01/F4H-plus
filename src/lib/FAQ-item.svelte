@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { IconChevronDown, IconChevronLeft } from '@tabler/icons-svelte';
+	import { FaChevronDown, FaChevronLeft } from 'svelte-icons/fa';
 	import { slide } from "svelte/transition";
 	export let entry: [string, string[]]
 	let isOpen = false
@@ -18,9 +18,9 @@
 
 	<p > {entry[0]} </p>
 	{#if isOpen}
-	<IconChevronDown class="icon" color="purple" size={32} />
+	<FaChevronDown class="icon" color="purple" size={32} />
 	{:else}
-	<IconChevronLeft class="icon" color="purple" size={32}/>
+	<FaChevronLeft class="icon" color="purple" size={32}/>
 	{/if}
 </div>
 </button>

@@ -13,7 +13,7 @@ import {
   import FoodData from "../assets/food_data.json";
   import CalorieCount from "../lib/CalorieCount.svelte";
   import Footer from "../lib/Footer.svelte";
-  import { IconDownload } from "@tabler/icons-svelte";
+  import { FaDownload } from "svelte-icons/fa";
   import MealTime from "../lib/MealTime.svelte";
   import { downloadDataAsPDF } from "../Download";
   let currentlySelected: string = "Breakfast";
@@ -236,7 +236,7 @@ bg-[url('../assets/ellipse.svg')] pb-28 px-32"
     }}
     class="flex space-x-3 py-4 px-6 font-poppins  bg-white mx-auto rounded-xl">
       <div class="bg-primary p-1.5 rounded-full">
-        <IconDownload color="white" stroke={3}/>
+        <FaDownload color="white" stroke={3}/>
       </div>
       <p class="text-primary font-semibold text-2xl">Download as PDF</p>
     </button>

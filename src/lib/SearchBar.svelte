@@ -2,7 +2,7 @@
 	// import { disease } from '../store/disease.js';
   // @ts-nocheck
 
-  import { IconSearch } from "@tabler/icons-svelte";
+  import { FaSearch } from 'svelte-icons/fa';
 import { onMount } from "svelte";
   import { fly } from "svelte/transition";
   export let id = "";
@@ -158,7 +158,7 @@ import { onMount } from "svelte";
           on:blur={handleBlur}
           placeholder="Select Ingredients"
         />
-        <IconSearch class="absolute top-1/2 left-12 transform -translate-y-1/2 text-3xl text-primary" size={42} />
+        <FaSearch class="absolute top-1/2 left-12 transform -translate-y-1/2 text-3xl text-primary" size={42} />
         <!-- <div
           class="bg-white remove-all rounded-full mr-2"
           title="Remove All"

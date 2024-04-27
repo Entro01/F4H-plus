@@ -7,7 +7,7 @@
     selectedDinner,
   } from "../store/selectedFood";
   import type { FoodItem, selectedItem } from "../types";
-  import { IconCheck, IconPlus } from "@tabler/icons-svelte";
+  import { FaCheck, FaPlus } from 'svelte-icons/fa';  
   export let foodType: string;
   export let filteredFood: FoodItem[];
   export let currentlySelected: string;
@@ -113,13 +113,13 @@ Hide
               {food.food_items}
             </p>
             {#if selectedItems.includes(food)}
-              <IconCheck
+              <FaCheck
                 class=" text-primary bg-white rounded-full p-1.5"
                 size={32}
               />
             {/if}
             {#if !selectedItems.includes(food)}
-              <IconPlus
+              <FaPlus
                 class=" bg-primary text-white rounded-full p-1.5"
                 size={32}
               />
